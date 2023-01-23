@@ -1,0 +1,151 @@
+[00:40:23] [Server thread/INFO]: Masked_Arcana lost connection: Disconnected
+[00:40:23] [Render thread/INFO]: Taking screenshot (takingScreenshot: false, saveScreenshot: true)
+[00:40:23] [Server thread/INFO]: Masked_Arcana left the game
+[00:40:23] [Render thread/INFO]: Taking screenshot (takingScreenshot: true, saveScreenshot: true)
+[00:40:23] [Server thread/INFO]: Stopping singleplayer server as player logged out
+[00:40:23] [Server thread/INFO]: Stopping server
+[00:40:23] [Server thread/INFO]: Saving players
+[00:40:23] [Server thread/INFO]: Saving worlds
+[00:40:23] [Render thread/INFO]: Saving screenshot at C:\Users\Sean\curseforge\minecraft\Instances\A Beautifully Foolish Modpack\screenshots\worlds\singleplayer\New World2 (1).png
+[00:40:23] [Server thread/INFO]: Saving chunks for level 'ServerLevel[No Dogs on the Moon]'/minecraft:overworld
+[00:40:24] [Server thread/INFO]: Saving chunks for level 'ServerLevel[No Dogs on the Moon]'/minecraft:the_end
+[00:40:24] [Server thread/INFO]: Saving chunks for level 'ServerLevel[No Dogs on the Moon]'/mythicbotany:alfheim
+[00:40:24] [Server thread/INFO]: Saving chunks for level 'ServerLevel[No Dogs on the Moon]'/minecraft:the_nether
+[00:40:24] [Render thread/INFO]: Minimap session finalized.
+[00:40:24] [Render thread/INFO]: Finalizing world map session...
+[00:40:24] [Thread-17/INFO]: World map cleaned normally!
+[00:40:24] [Server thread/INFO]: ThreadedAnvilChunkStorage (New World2 (1)): All chunks are saved
+[00:40:24] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[00:40:24] [Server thread/INFO]: ThreadedAnvilChunkStorage (alfheim): All chunks are saved
+[00:40:24] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[00:40:24] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[00:40:24] [Render thread/INFO]: World map session finalized.
+[00:40:24] [Render thread/INFO]: JEI StartEventObserver received class net.minecraftforge.client.event.ClientPlayerNetworkEvent$LoggedOutEvent
+[00:40:24] [Render thread/INFO]: JEI StartEventObserver transitioning state from JEI_STARTED to DISABLED
+[00:40:24] [Render thread/INFO]: Stopping JEI
+[00:40:39] [Server thread/INFO]: Unloading server configs...
+[00:48:34] [Render thread/ERROR]: Exception caught during firing event: Illegal char <:> at index 106: C:\Users\Sean\curseforge\minecraft\Instances\A Beautifully Foolish Modpack\screenshots/worlds/servers/fe80::8be8:ee10:183e:1792_51323.png
+	Index: 6
+	Listeners:
+		0: HIGH
+		1: ASM: class dev.architectury.event.forge.EventHandlerImplClient event(Lnet/minecraftforge/client/event/ScreenEvent$InitScreenEvent$Pre;)V
+		2: ASM: betteradvancements.forge.handler.GuiOpenHandler@4a2ed36f onGuiAboutToOpen(Lnet/minecraftforge/client/event/ScreenEvent$InitScreenEvent$Pre;)V
+		3: NORMAL
+		4: net.minecraftforge.eventbus.EventBus$$Lambda$4261/0x0000000800d21578@73c2c29f
+		5: ASM: tschipp.carryon.client.event.RenderEvents@613bd445 onGuiInit(Lnet/minecraftforge/client/event/ScreenEvent$InitScreenEvent$Pre;)V
+		6: ASM: class com.daderpduck.seamless_loading_screen.events.EventHandler initGuiEvent(Lnet/minecraftforge/client/event/ScreenEvent$InitScreenEvent;)V
+		7: ASM: class net.mehvahdjukaar.supplementaries.common.events.ClientEvents onGuiInit(Lnet/minecraftforge/client/event/ScreenEvent$InitScreenEvent;)V
+		8: ASM: com.github.alexthe666.citadel.ClientProxy@4e7f7add openScreen(Lnet/minecraftforge/client/event/ScreenEvent$InitScreenEvent;)V
+		9: ASM: class vazkii.quark.base.client.config.QButtonHandler onGuiInit(Lnet/minecraftforge/client/event/ScreenEvent$InitScreenEvent;)V
+		10: ASM: class com.simibubi.create.foundation.config.ui.OpenCreateMenuButton$OpenConfigButtonHandler onGuiInit(Lnet/minecraftforge/client/event/ScreenEvent$InitScreenEvent;)V
+		11: ASM: vazkii.quark.content.client.module.BackButtonKeybind@34533687 openGui(Lnet/minecraftforge/client/event/ScreenEvent$InitScreenEvent;)V
+java.nio.file.InvalidPathException: Illegal char <:> at index 106: C:\Users\Sean\curseforge\minecraft\Instances\A Beautifully Foolish Modpack\screenshots/worlds/servers/fe80::8be8:ee10:183e:1792_51323.png
+	at java.base/sun.nio.fs.WindowsPathParser.normalize(WindowsPathParser.java:182)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:153)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:77)
+	at java.base/sun.nio.fs.WindowsPath.parse(WindowsPath.java:92)
+	at java.base/sun.nio.fs.WindowsFileSystem.getPath(WindowsFileSystem.java:232)
+	at java.base/java.nio.file.Path.of(Path.java:147)
+	at java.base/java.nio.file.Paths.get(Paths.java:69)
+	at TRANSFORMER/seamless_loading_screen@1.18-3.0.0/com.daderpduck.seamless_loading_screen.ScreenshotLoader.setScreenshot(ScreenshotLoader.java:41)
+	at TRANSFORMER/seamless_loading_screen@1.18-3.0.0/com.daderpduck.seamless_loading_screen.ScreenshotLoader.setScreenshotServer(ScreenshotLoader.java:32)
+	at TRANSFORMER/seamless_loading_screen@1.18-3.0.0/com.daderpduck.seamless_loading_screen.events.EventHandler.initGuiEvent(EventHandler.java:40)
+	at net.minecraftforge.eventbus.ASMEventHandler_211_EventHandler_initGuiEvent_InitScreenEvent.invoke(.dynamic)
+	at MC-BOOTSTRAP/eventbus@5.0.3/net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:85)
+	at MC-BOOTSTRAP/eventbus@5.0.3/net.minecraftforge.eventbus.EventBus.post(EventBus.java:302)
+	at MC-BOOTSTRAP/eventbus@5.0.3/net.minecraftforge.eventbus.EventBus.post(EventBus.java:283)
+	at TRANSFORMER/minecraft@1.18.2/net.minecraft.client.gui.screens.Screen.m_6575_(Screen.java:420)
+	at TRANSFORMER/minecraft@1.18.2/net.minecraft.client.Minecraft.m_91152_(Minecraft.java:920)
+	at TRANSFORMER/minecraft@1.18.2/net.minecraft.client.gui.screens.ConnectScreen.m_169267_(ConnectScreen.java:52)
+	at TRANSFORMER/minecraft@1.18.2/net.minecraft.client.gui.screens.multiplayer.JoinMultiplayerScreen.m_99702_(JoinMultiplayerScreen.java:230)
+	at TRANSFORMER/minecraft@1.18.2/net.minecraft.client.gui.screens.multiplayer.JoinMultiplayerScreen.m_99729_(JoinMultiplayerScreen.java:224)
+	at TRANSFORMER/minecraft@1.18.2/net.minecraft.client.gui.screens.multiplayer.JoinMultiplayerScreen.m_99727_(JoinMultiplayerScreen.java:74)
+	at TRANSFORMER/minecraft@1.18.2/net.minecraft.client.gui.components.Button.m_5691_(Button.java:40)
+	at TRANSFORMER/minecraft@1.18.2/net.minecraft.client.gui.components.AbstractButton.m_5716_(AbstractButton.java:16)
+	at TRANSFORMER/minecraft@1.18.2/net.minecraft.client.gui.components.AbstractWidget.m_6375_(AbstractWidget.java:111)
+	at TRANSFORMER/minecraft@1.18.2/net.minecraft.client.gui.components.events.ContainerEventHandler.m_6375_(ContainerEventHandler.java:27)
+	at TRANSFORMER/minecraft@1.18.2/net.minecraft.client.MouseHandler.m_168084_(MouseHandler.java:88)
+	at TRANSFORMER/minecraft@1.18.2/net.minecraft.client.gui.screens.Screen.m_96579_(Screen.java:528)
+	at TRANSFORMER/minecraft@1.18.2/net.minecraft.client.MouseHandler.m_91530_(MouseHandler.java:85)
+	at TRANSFORMER/minecraft@1.18.2/net.minecraft.client.MouseHandler.m_168091_(MouseHandler.java:185)
+	at TRANSFORMER/minecraft@1.18.2/net.minecraft.util.thread.BlockableEventLoop.execute(BlockableEventLoop.java:118)
+	at TRANSFORMER/minecraft@1.18.2/net.minecraft.client.MouseHandler.m_91565_(MouseHandler.java:184)
+	at MC-BOOTSTRAP/org.lwjgl.glfw/org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:36)
+	at MC-BOOTSTRAP/org.lwjgl/org.lwjgl.system.JNI.invokeV(Native Method)
+	at MC-BOOTSTRAP/org.lwjgl.glfw/org.lwjgl.glfw.GLFW.glfwWaitEventsTimeout(GLFW.java:3174)
+	at TRANSFORMER/minecraft@1.18.2/com.mojang.blaze3d.systems.RenderSystem.m_69830_(RenderSystem.java:225)
+	at TRANSFORMER/minecraft@1.18.2/net.minecraft.client.Minecraft.m_91383_(Minecraft.java:1071)
+	at TRANSFORMER/minecraft@1.18.2/net.minecraft.client.Minecraft.m_91374_(Minecraft.java:665)
+	at TRANSFORMER/minecraft@1.18.2/net.minecraft.client.main.Main.main(Main.java:205)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at MC-BOOTSTRAP/fmlloader@1.18.2-40.2.0/net.minecraftforge.fml.loading.targets.CommonClientLaunchHandler.lambda$launchService$0(CommonClientLaunchHandler.java:31)
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@9.1.3/cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:37)
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@9.1.3/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53)
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@9.1.3/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71)
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@9.1.3/cpw.mods.modlauncher.Launcher.run(Launcher.java:106)
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@9.1.3/cpw.mods.modlauncher.Launcher.main(Launcher.java:77)
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@9.1.3/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26)
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@9.1.3/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23)
+	at cpw.mods.bootstraplauncher@1.0.0/cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:149)
+
+[00:48:36] [Render thread/ERROR]: Reported exception thrown!
+net.minecraft.ReportedException: mouseClicked event handler
+	at net.minecraft.client.gui.screens.Screen.m_96579_(Screen.java:535) ~[client-1.18.2-20220404.173914-srg.jar%23198!/:?]
+	at net.minecraft.client.MouseHandler.m_91530_(MouseHandler.java:85) ~[client-1.18.2-20220404.173914-srg.jar%23198!/:?]
+	at net.minecraft.client.MouseHandler.m_168091_(MouseHandler.java:185) ~[client-1.18.2-20220404.173914-srg.jar%23198!/:?]
+	at net.minecraft.util.thread.BlockableEventLoop.execute(BlockableEventLoop.java:118) ~[client-1.18.2-20220404.173914-srg.jar%23198!/:?]
+	at net.minecraft.client.MouseHandler.m_91565_(MouseHandler.java:184) ~[client-1.18.2-20220404.173914-srg.jar%23198!/:?]
+	at org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:36) ~[lwjgl-glfw-3.2.2.jar%2348!/:build 10]
+	at org.lwjgl.system.JNI.invokeV(Native Method) ~[lwjgl-3.2.2.jar%2344!/:build 10]
+	at org.lwjgl.glfw.GLFW.glfwWaitEventsTimeout(GLFW.java:3174) ~[lwjgl-glfw-3.2.2.jar%2348!/:build 10]
+	at com.mojang.blaze3d.systems.RenderSystem.m_69830_(RenderSystem.java:225) ~[client-1.18.2-20220404.173914-srg.jar%23198!/:?]
+	at net.minecraft.client.Minecraft.m_91383_(Minecraft.java:1071) ~[client-1.18.2-20220404.173914-srg.jar%23198!/:?]
+	at net.minecraft.client.Minecraft.m_91374_(Minecraft.java:665) ~[client-1.18.2-20220404.173914-srg.jar%23198!/:?]
+	at net.minecraft.client.main.Main.main(Main.java:205) ~[client-1.18.2-20220404.173914-srg.jar%23198!/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at net.minecraftforge.fml.loading.targets.CommonClientLaunchHandler.lambda$launchService$0(CommonClientLaunchHandler.java:31) ~[fmlloader-1.18.2-40.2.0.jar%2317!/:?]
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:37) [modlauncher-9.1.3.jar%235!/:?]
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) [modlauncher-9.1.3.jar%235!/:?]
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) [modlauncher-9.1.3.jar%235!/:?]
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:106) [modlauncher-9.1.3.jar%235!/:?]
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:77) [modlauncher-9.1.3.jar%235!/:?]
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) [modlauncher-9.1.3.jar%235!/:?]
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) [modlauncher-9.1.3.jar%235!/:?]
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:149) [bootstraplauncher-1.0.0.jar:?]
+Caused by: java.nio.file.InvalidPathException: Illegal char <:> at index 106: C:\Users\Sean\curseforge\minecraft\Instances\A Beautifully Foolish Modpack\screenshots/worlds/servers/fe80::8be8:ee10:183e:1792_51323.png
+	at sun.nio.fs.WindowsPathParser.normalize(WindowsPathParser.java:182) ~[?:?]
+	at sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:153) ~[?:?]
+	at sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:77) ~[?:?]
+	at sun.nio.fs.WindowsPath.parse(WindowsPath.java:92) ~[?:?]
+	at sun.nio.fs.WindowsFileSystem.getPath(WindowsFileSystem.java:232) ~[?:?]
+	at java.nio.file.Path.of(Path.java:147) ~[?:?]
+	at java.nio.file.Paths.get(Paths.java:69) ~[?:?]
+	at com.daderpduck.seamless_loading_screen.ScreenshotLoader.setScreenshot(ScreenshotLoader.java:41) ~[seamless_loading_screen-1.18-3.0.0.jar%23172!/:1.18-3.0.0]
+	at com.daderpduck.seamless_loading_screen.ScreenshotLoader.setScreenshotServer(ScreenshotLoader.java:32) ~[seamless_loading_screen-1.18-3.0.0.jar%23172!/:1.18-3.0.0]
+	at com.daderpduck.seamless_loading_screen.events.EventHandler.initGuiEvent(EventHandler.java:40) ~[seamless_loading_screen-1.18-3.0.0.jar%23172!/:1.18-3.0.0]
+	at net.minecraftforge.eventbus.ASMEventHandler_211_EventHandler_initGuiEvent_InitScreenEvent.invoke(.dynamic) ~[?:?]
+	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:85) ~[eventbus-5.0.3.jar%232!/:?]
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:302) ~[eventbus-5.0.3.jar%232!/:?]
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:283) ~[eventbus-5.0.3.jar%232!/:?]
+	at net.minecraft.client.gui.screens.Screen.m_6575_(Screen.java:420) ~[client-1.18.2-20220404.173914-srg.jar%23198!/:?]
+	at net.minecraft.client.Minecraft.m_91152_(Minecraft.java:920) ~[client-1.18.2-20220404.173914-srg.jar%23198!/:?]
+	at net.minecraft.client.gui.screens.ConnectScreen.m_169267_(ConnectScreen.java:52) ~[client-1.18.2-20220404.173914-srg.jar%23198!/:?]
+	at net.minecraft.client.gui.screens.multiplayer.JoinMultiplayerScreen.m_99702_(JoinMultiplayerScreen.java:230) ~[client-1.18.2-20220404.173914-srg.jar%23198!/:?]
+	at net.minecraft.client.gui.screens.multiplayer.JoinMultiplayerScreen.m_99729_(JoinMultiplayerScreen.java:224) ~[client-1.18.2-20220404.173914-srg.jar%23198!/:?]
+	at net.minecraft.client.gui.screens.multiplayer.JoinMultiplayerScreen.m_99727_(JoinMultiplayerScreen.java:74) ~[client-1.18.2-20220404.173914-srg.jar%23198!/:?]
+	at net.minecraft.client.gui.components.Button.m_5691_(Button.java:40) ~[client-1.18.2-20220404.173914-srg.jar%23198!/:?]
+	at net.minecraft.client.gui.components.AbstractButton.m_5716_(AbstractButton.java:16) ~[client-1.18.2-20220404.173914-srg.jar%23198!/:?]
+	at net.minecraft.client.gui.components.AbstractWidget.m_6375_(AbstractWidget.java:111) ~[client-1.18.2-20220404.173914-srg.jar%23198!/:?]
+	at net.minecraft.client.gui.components.events.ContainerEventHandler.m_6375_(ContainerEventHandler.java:27) ~[client-1.18.2-20220404.173914-srg.jar%23198!/:?]
+	at net.minecraft.client.MouseHandler.m_168084_(MouseHandler.java:88) ~[client-1.18.2-20220404.173914-srg.jar%23198!/:?]
+	at net.minecraft.client.gui.screens.Screen.m_96579_(Screen.java:528) ~[client-1.18.2-20220404.173914-srg.jar%23198!/:?]
+	... 24 more
+[00:48:36] [Render thread/FATAL]: Preparing crash report with UUID da750b72-6881-4d4d-8791-2dd61f0b1e1a
+[00:48:37] [Render thread/FATAL]: Preparing crash report with UUID c0b140d9-e106-4c2e-a1a6-3286e7809054
+[00:48:37] [Render thread/FATAL]: Preparing crash report with UUID a8a8e2c1-b283-49fb-a079-6c4670d562ca
